@@ -155,12 +155,12 @@ border: 0;
     position: relative;
 }
 .cDivMapContainer .cDivFilter{
-    padding:25px;
-    background-color:#FFF;
-    position:absolute;
-    right: 0;
-    z-index:100;
+    
 }
 .cInputPrice{
     width:100%;
+}
+.cDivInfoWindow{
+    background-color: #FFF;
+    padding:15px;
 }
