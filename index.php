@@ -82,8 +82,8 @@
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="img/testimonial_2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-           <h2>Delay-Party Barcelona</h2>
-          <p>When I picked up my luggage Matt spotted my Flirty Bird tag. We shared a cab into town and went for a coffee. It was a great start of my holiday. and had a great chat.</p>
+           <h2>Flirting below the belt</h2>
+          <p>When I picked up my luggage Matt spotted my Flirty Bird tag. We shared a cab into town and went for a coffee. It was a great start of my holiday.</p>
           <em>-Ross-</em>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
