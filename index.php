@@ -29,7 +29,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!--        Logo-->
         <div class="logo">
-              <center><img src="img/logo.png" /></center>
+              <center><img src="img/logo.png" class="img-responsive" /></center>
           </div>
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -58,16 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -84,36 +75,40 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="img/testimonial_1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Delay Party Barcelona</h2>
-          <p>My 3 hours delay in Paris-Charles de Gaulle turned into a great get together. Anne and I are still in touch.</p>
-          <em>-Ross-</em>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Delay Party Paris-Charles de Gaulle</h2>
+          <p>My 3 hours delay in Paris-Charles de Gaulle turned into a great get together. That is where I met Anna, we had a grat time together.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
     </div>
     
-    <div class="container-fluid cDivMapContainer">
-        <div class="cDivFilter col-md-4 pull-right">
-            <div class="cDivCalendar"></div><br />
-            <label>Price:</label><br />
-            <input class="cInputPrice" type="text" value="" data-slider-min="40" data-slider-max="1500" data-slider-step="10">
-        </div>
-        <div class="embed-responsive embed-responsive-16by9">
-        <div id="map-canvas"></div>
+    <div class="container cDivMapContainer">
+        <div class="row">
+            <div class="col-md-8">
+            <div class="embed-responsive embed-responsive-16by9">
+            <div id="map-canvas"></div>
+            </div>
+            </div>
+            
+            <div class="cDivFilter col-md-4">
+                <div class="cDivCalendar"></div><br />
+                <label>Price:</label><br />
+                <input class="cInputPrice" type="text" value="" data-slider-min="40" data-slider-max="1500" data-slider-step="10">
+                <br /><br /><label>Type of journey:</label><br />
+                <input type="checkbox" value="quick" id="iCheckQuicky">&nbsp;&nbsp;<label for="iCheckQuicky">Quicky</label><br />
+                <input type="checkbox" value="long" id="iCheckLT">&nbsp;&nbsp;<label for="iCheckLT">Long term commitment</label>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -129,12 +124,30 @@
       </footer>
 
     </div><!-- /.container -->
-
+    <div class="modal fade" id="iModalInfo">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEFya_ZjQy6Kc9t9gzNG0oLWxz48hlME"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+    
      <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>

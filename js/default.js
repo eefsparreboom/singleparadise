@@ -82,7 +82,11 @@ function initialize() {
             infowindows.push(marker);
             google.maps.event.addListener(marker, 'click', function() {
                 $('#iModalInfo').modal();
-                $('.modal-body p').html(marker.object);
+                var object = marker.object;
+                console.log('object');
+                console.log(object);
+                $('.modal-title').html(object.name);
+                $('.modal-body p').html(object.average_price);
             });
 
 
@@ -121,7 +125,7 @@ $(document).ready(function(){
             for (var key in p) {
                 if (p.hasOwnProperty(key)) {
                     var city = p[key];
-                    var sHTML = city.toString();
+                    var sHTML = city;
                     var bird = Math.floor((Math.random() * 4) + 1);
                     setMarker(city.name,bird.toString(),sHTML);
                     
