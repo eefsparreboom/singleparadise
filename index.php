@@ -77,7 +77,7 @@
         <div class="col-lg-4">
             <img class="img-circle" src="img/testimonial_1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Delay-Party Barcelona</h2>
-          <p>The 3 hour delay in at Barcelona Airport turned into a great get together. Anne and I are still in touch.</p>
+          <p>The 3 hour delay at Barcelona Airport turned into a great get together. Anne and I still keep in touch.</p>
           <em>-Ross-</em>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
