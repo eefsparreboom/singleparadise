@@ -110,6 +110,9 @@
             <div class="cDivCalendar"></div><br />
             <label>Price:</label><br />
             <input class="cInputPrice" type="text" value="" data-slider-min="40" data-slider-max="1500" data-slider-step="10">
+            <br /><br /><label>Type of journey:</label><br />
+            <input type="checkbox" value="1" id="iCheckQuicky">&nbsp;&nbsp;<label for="iCheckQuicky">Quicky</label><br />
+            <input type="checkbox" value="1" id="iCheckLT">&nbsp;&nbsp;<label for="iCheckLT">Long term commitment</label>
         </div>
         <div class="embed-responsive embed-responsive-16by9">
         <div id="map-canvas"></div>
