@@ -77,18 +77,20 @@
         <div class="col-lg-4">
             <img class="img-circle" src="img/testimonial_1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Delay-Party Barcelona</h2>
-          <p>The 3 hour delay at Barcelona Airport turned into a great get together. Anne and I still keep in touch.</p>
+          <p>The 3 hour delay at Barcelona Airport turned into a great get together. I met really nice people and it was a great start of my holiday.Anne and I still keep in touch.</p>
           <em>-Ross-</em>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <img class="img-circle" src="img/testimonial_2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+           <h2>Delay-Party Barcelona</h2>
+          <p>When I picked up my luggage Matt spotted my Flirty Bird tag. We shared a cab into town and went for a coffee. It was a great start of my holiday. and had a great chat.</p>
+          <em>-Ross-</em>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <img class="img-circle" src="img/testimonial_3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Making Friends</h2>
+          <p>I like organizing drinks with other Flirty Birds during my vacation. It is a great way to make friends when I'm on vacation.</p>
+          <em>-Eve-</em>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
