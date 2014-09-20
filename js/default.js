@@ -4,21 +4,47 @@
  * and open the template in the editor.
  */
 
-
+var map;
 function initialize() {
+        var styles = [
+  {
+    featureType: "water",
+    stylers: [
+      { hue: "#0067b2" },
+        { saturation: 50 },
+        { lightness: 50 }
+    ]
+  },
+  {
+    featureType: "landscape",
+    stylers: [
+      { hue: "#6db33f" },
+        { saturation: 100 },
+        { lightness: 50 }
+    ]
+  }
+];
+
         var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
+          //center: { lat: location.lat(), lng: location.lng()},
+          zoom: 4,
+          scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    styles: styles
         };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
+        map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
+            setCenter('europe');
       }
-      function getLatLong(address){
+      function setCenter(address){
         var geo = new google.maps.Geocoder;
 
         geo.geocode({'address':address},function(results, status){
                 if (status == google.maps.GeocoderStatus.OK) {
-                  return results[0].geometry.location;
+                    var location = results[0].geometry.location;
+                    map.setCenter(new google.maps.LatLng(location.lat(), location.lng()));
                 } else {
                   alert("Geocode was not successful for the following reason: " + status);
                 }
@@ -27,3 +53,12 @@ function initialize() {
 
     }
       google.maps.event.addDomListener(window, 'load', initialize);
+      
+$(document).ready(function(){
+   $('.cDivCalendar').datepicker({
+    }); 
+    $('.cDivCalendar').datepicker('update', '11-05-2014');
+    $('.cInputPrice').slider({
+        value:[100,200]
+    });
+});

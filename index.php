@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,10 +21,16 @@
   </head>
   <body>
     
-
+      <div class="container">
+          
+      </div>
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!--        Logo-->
+        <div class="logo">
+              <center><img src="img/logo.png" /></center>
+          </div>
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -97,8 +105,13 @@
 
     </div>
     
-    <div class="container-fluid">
-        <div class="embed-responsive embed-responsive-4by3">
+    <div class="container-fluid cDivMapContainer">
+        <div class="cDivFilter col-md-4 pull-right">
+            <div class="cDivCalendar"></div><br />
+            <label>Price:</label><br />
+            <input class="cInputPrice" type="text" value="" data-slider-min="40" data-slider-max="1500" data-slider-step="10">
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
         <div id="map-canvas"></div>
         </div>
     </div>
@@ -123,6 +136,8 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEFya_ZjQy6Kc9t9gzNG0oLWxz48hlME"></script>
      <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
     <script src="js/default.js"></script>
     
   </body>

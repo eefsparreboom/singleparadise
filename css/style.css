@@ -51,7 +51,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #fff;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -59,7 +59,12 @@ body {
   left: 0;
   min-width: 100%;
 }
-
+.carousel .logo{
+    position:absolute;
+    top:0;
+    z-index: 100;
+width: 100%;
+}
 
 
 /* MARKETING CONTENT
@@ -144,4 +149,18 @@ bottom: 0;
 height: 100%;
 width: 100%;
 border: 0;
+}
+
+.cDivMapContainer{
+    position: relative;
+}
+.cDivMapContainer .cDivFilter{
+    padding:25px;
+    background-color:#FFF;
+    position:absolute;
+    right: 0;
+    z-index:100;
+}
+.cInputPrice{
+    width:100%;
 }
