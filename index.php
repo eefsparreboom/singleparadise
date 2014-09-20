@@ -75,9 +75,10 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Delay Party Paris-Charles de Gaulle</h2>
-          <p>My 3 hours delay in Paris-Charles de Gaulle turned into a great get together. That is where I met Anna, we had a grat time together.</p>
+            <img class="img-circle" src="img/testimonial_1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Delay-Party Barcelona</h2>
+          <p>The 3 hour delay in at Barcelona Airport turned into a great get together. Anne and I are still in touch.</p>
+          <em>-Ross-</em>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
