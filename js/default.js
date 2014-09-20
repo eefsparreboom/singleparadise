@@ -87,10 +87,10 @@ function initialize() {
                 console.log(object);
                 $('.modal-title').html(object.name);
                 var html = '<tr>';
-                    html += '  <th>Flight #</th>';
-                    html += '  <th>Flirty birds</th>';
-                    html += '  <th>Duration</th>';
-                    html += '  <th>Price</th>';
+                    html += '  <th><span class="glyphicon glyphicon-plane"></span></th>';
+                    html += '  <th><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;Flirty birds</th>';
+                    html += '  <th><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;Duration</th>';
+                    html += '  <th><span class="glyphicon glyphicon-euro"></span></th>';
                     html += '  <th></th>';
                   html += '</tr>';
                 for(i=0;i<object.flights.length;i++){
@@ -99,8 +99,12 @@ function initialize() {
                     html += '  <td>'+flight.code+'</td>';
                     html += '  <td>'+flight.singles+'</td>';
                     html += '  <td>'+flight.duration+'</td>';
-                    html += '  <td>'+flight.fare+'</td>';
-                    html += '  <td>'+flight.seats+' seats available! <a class="btn btn-default" href="#">Book</a></td>';
+                    html += '  <td>&euro;'+flight.fare+'</td>';
+                    if(parseInt(flight.seats)>0){
+                        html += '  <td>'+flight.seats+' seats available! <a class="btn btn-primary pull-right" href="http://www.transavia.com/hv/nl-NL/reisgids/vliegtickets/nederland/vliegticket-'+object.name+'?city='+object.code+'">Book</a></td>';
+                    }else{
+                        html += '  <td>'+flight.seats+' seats available :(</td>';
+                    }
                       
                   html += '</tr>';
               }
@@ -145,8 +149,9 @@ $(document).ready(function(){
                     var city = p[key];
                     var sHTML = city;
                     var bird = Math.floor((Math.random() * 4) + 1);
-                    setMarker(city.name,bird.toString(),sHTML);
-                    
+                    if(city.flights.length > 0){
+                        setMarker(city.name,bird.toString(),sHTML);
+                    }
                   console.log(p[key]);
                 }
               }
