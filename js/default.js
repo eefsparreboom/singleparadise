@@ -86,7 +86,25 @@ function initialize() {
                 console.log('object');
                 console.log(object);
                 $('.modal-title').html(object.name);
-                $('.modal-body p').html(object.average_price);
+                var html = '<tr>';
+                    html += '  <th>Flight #</th>';
+                    html += '  <th>Flirty birds</th>';
+                    html += '  <th>Duration</th>';
+                    html += '  <th>Price</th>';
+                    html += '  <th></th>';
+                  html += '</tr>';
+                for(i=0;i<object.flights.length;i++){
+                    var flight = object.flights[i];
+                  html += '<tr>';
+                    html += '  <td>'+flight.code+'</td>';
+                    html += '  <td>'+flight.singles+'</td>';
+                    html += '  <td>'+flight.duration+'</td>';
+                    html += '  <td>'+flight.fare+'</td>';
+                    html += '  <td>'+flight.seats+' seats available! <a class="btn btn-default" href="#">Book</a></td>';
+                      
+                  html += '</tr>';
+              }
+                $('.modal-body table').html(html);
             });
 
 

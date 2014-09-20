@@ -132,7 +132,9 @@
               <h4 class="modal-title">Modal title</h4>
             </div>
             <div class="modal-body">
-              <p>One fine body&hellip;</p>
+              <table class="table">
+                  
+</table>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
