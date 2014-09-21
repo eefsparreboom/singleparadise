@@ -88,6 +88,7 @@ function initialize() {
                 $('.modal-title').html(object.name);
                 var html = '<tr>';
                     html += '  <th><span class="glyphicon glyphicon-plane"></span></th>';
+		    html += '  <th><span class="glyphicon glyphicon-time"></span></th>';
                     html += '  <th><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;Flirty birds</th>';
                     html += '  <th><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;Duration</th>';
                     html += '  <th><span class="glyphicon glyphicon-euro"></span></th>';
@@ -97,6 +98,7 @@ function initialize() {
                     var flight = object.flights[i];
                   html += '<tr>';
                     html += '  <td>'+flight.code+'</td>';
+	            html += '  <td>'+flight.departure+'</td>';
                     html += '  <td>'+flight.singles+'</td>';
                     html += '  <td>'+flight.duration+'</td>';
                     html += '  <td>&euro;'+flight.fare+'</td>';
