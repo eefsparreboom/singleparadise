@@ -146,6 +146,10 @@ $(document).ready(function(){
     $('#download-tag').on('click',function(){
        $('#iModalDownload').modal();
     });
+    $('.carousel-caption a').click(function(e){
+        e.preventDefault();
+        $('body').scrollTo($('.cH1Find'), 400,{'axis':'y'});
+    });
   	 
     function updateBirds(){
         var vars = {};

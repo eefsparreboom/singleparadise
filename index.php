@@ -117,7 +117,7 @@
 
     </div>
     <a name="find"></a>
-    <h1 style="text-align: center;"><img src="img/logo_map.png" height="100px" /> </h1>
+    <h1 style="text-align: center;" class="cH1Find"><img src="img/logo_map.png" height="100px" /> </h1>
     <div class="container cDivMapContainer">
         <div class="row">
             <div class="col-md-8">
@@ -211,11 +211,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title">Download Tag</h4>
+                    <h4 class="modal-title">Download Luggage tag</h4>
                 </div>
                 <div class="modal-body">
                     <img src="/img/boardingpass.jpg" class="img-responsive" /><br />
-                    <button type="button" class="btn btn-primary btn-lg">Download Tag</button>
+                    <button type="button" class="btn btn-primary btn-lg">Download Luggage tag</button>
                 </div>
             
             </div><!-- /.modal-content -->
@@ -232,6 +232,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/bootstrap-slider.js"></script>
+    <script src="js/scrollto.min.js"></script>
     <script src="js/default.js"></script>
     
   </body>

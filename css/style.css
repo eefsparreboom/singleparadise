@@ -71,6 +71,7 @@ width: 100%;
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4,
 .marketing .col-lg-6 {
   margin-bottom: 20px;
   text-align: center;
@@ -78,6 +79,7 @@ width: 100%;
 .marketing h2 {
   font-weight: normal;
 }
+.marketing .col-lg-4 p,
 .marketing .col-lg-6 p {
   margin-right: 10px;
   margin-left: 10px;
