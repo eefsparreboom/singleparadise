@@ -85,7 +85,7 @@ function initialize() {
                 var object = marker.object;
                 console.log('object');
                 console.log(object);
-                $('.modal-title').html(object.name);
+                $('.modal-title').html('<a href="http://www.transavia.com/hv/nl-NL/reisgids/vliegtickets/nederland/vliegticket-'+object.name+'?city='+object.code+'">'+object.name+'</a>');
                 var html = '<tr>';
                     html += '  <th><span class="glyphicon glyphicon-plane"></span></th>';
 		    html += '  <th><span class="glyphicon glyphicon-time"></span></th>';
@@ -103,7 +103,7 @@ function initialize() {
                     html += '  <td>'+flight.duration+'</td>';
                     html += '  <td>&euro;'+flight.fare+'</td>';
                     if(parseInt(flight.seats)>0){
-                        html += '  <td>'+flight.seats+' seats available! <a class="btn btn-primary pull-right" href="http://www.transavia.com/hv/nl-NL/reisgids/vliegtickets/nederland/vliegticket-'+object.name+'?city='+object.code+'">Book</a></td>';
+                        html += '  <td>'+flight.seats+' seats available! <a class="btn btn-primary pull-right book" href="/book.php">Book</a></td>';
                     }else{
                         html += '  <td>'+flight.seats+' seats available :(</td>';
                     }
@@ -146,8 +146,7 @@ $(document).ready(function(){
     $('#download-tag').on('click',function(){
        $('#iModalDownload').modal();
     });
-    
-    
+  	 
     function updateBirds(){
         var vars = {};
         for (var i = 0; i < infowindows.length; i++ ) {
