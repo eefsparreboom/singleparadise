@@ -44,7 +44,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Find a Flirty Birdy Flight.</h1>
-              <p>Find flights full of other single travellers. <br />Search by Destination, Price and Number of Singles Travellers.</p>
+              <p>Find flights full of other single travellers. <br>Search by Destination, Price and Number of Singles Travellers.</p>
               <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
             </div>
           </div>
@@ -54,7 +54,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Get your Flirty Bird on.</h1>
-              <p>After you have booked your flight you will receive your Flirty Bird Luggage Tag. <br />Tag it on your luggage and let the flirting begin at the Airport.</p>
+              <p>After you have booked your flight you will receive your Flirty Bird Luggage Tag. <br>Tag it on your luggage and let the flirting begin at the Airport.</p>
                <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
             </div>
           </div>
@@ -64,7 +64,7 @@
             <div class="container">
             <div class="carousel-caption">
             <h1>Happy Flirty Flight!</h1>
-            <p>Travelling will be exciting again. <br />Spot other Flirty Bird Luggage Tags and start flirting.</p>
+            <p>Travelling will be exciting again. <br>Spot other Flirty Bird Luggage Tags and start flirting.</p>
               <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
           </div>
             </div>
