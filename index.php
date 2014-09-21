@@ -107,6 +107,7 @@
 
     </div>
     <a name="find"></a>
+    <h1 style="text-align: center;">Find a <img src="img/logo.png" width="200px" /> flight</h1>
     <div class="container cDivMapContainer">
         <div class="row">
             <div class="col-md-8">
@@ -117,7 +118,7 @@
             
             <div class="cDivFilter col-md-4">
                 <div class="cDivCalendar"></div><br />
-                <label>Price:</label><br />
+                <label>Price: &euro;<span class="cSpanPriceFrom">100</span> - &euro;<span class="cSpanPriceTo">800</span></label><br />
                 <input class="cInputPrice" type="text" value="" data-slider-min="40" data-slider-max="1500" data-slider-step="10">
                 <br /><br /><label>Type of journey:</label><br />
                 <input type="checkbox" value="quick" id="iCheckQuicky">&nbsp;&nbsp;<label for="iCheckQuicky">Quicky</label><br />

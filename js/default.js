@@ -72,7 +72,7 @@ function initialize() {
 //                    infowindows.push(marker);
                     bindInfoWindow(marker, map, infoWindow);
                 } else {
-                  alert("Geocode was not successful for the following reason: " + status);
+//                  alert("Geocode was not successful for the following reason: " + status);
                 }
 
          });
@@ -126,8 +126,17 @@ $(document).ready(function(){
     $('.cDivFilter input[type="checkbox"]').click(function(){
         updateBirds();
     });
-    $('.cInputPrice').slider({
+    var inputslider = $('.cInputPrice').slider({
         value:[100,800]
+    }).data('slider');
+    $('.cInputPrice').slider().on('slideStop',function(){
+        //console.log(inputslider.getValue());
+        updateBirds();
+    }).on('slide',function(){
+        var priceRange = inputslider.getValue();
+        $('.cSpanPriceFrom').html(priceRange[0].toString());
+        $('.cSpanPriceTo').html(priceRange[1].toString());
+        
     });
     $('#delay-parties').on('click',function(){
        $('#iModalDelay').modal(); 
@@ -139,7 +148,6 @@ $(document).ready(function(){
     
     function updateBirds(){
         var vars = {};
-        console.log(infowindows);
         for (var i = 0; i < infowindows.length; i++ ) {
             infowindows[i].setMap(null);
           }
@@ -150,13 +158,16 @@ $(document).ready(function(){
         if($('.cDivFilter input:checked').length===1){
             vars.duration = $('.cDivFilter input:checked').val();
         }
+        
+        var priceRange = $('.cInputPrice').slider().data('slider').getValue();
+        console.log(priceRange);
         $.get('/xhr.php',vars,function(p){
             for (var key in p) {
                 if (p.hasOwnProperty(key)) {
                     var city = p[key];
                     var sHTML = city;
                     var bird = Math.floor((Math.random() * 4) + 1);
-                    if(city.flights.length > 0){
+                    if(city.flights.length > 0 && city.average_price>=priceRange[0] && city.average_price<=priceRange[1]){
                         setMarker(city.name,bird.toString(),sHTML);
                     }
                   console.log(p[key]);
