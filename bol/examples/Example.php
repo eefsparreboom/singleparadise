@@ -282,7 +282,7 @@ class Example {
     private static function search($bRaw=0,$params='') {
         // search products /catalog/v4/search/ + queryParams
         if(!isset($params['q'])) {
-            $q = 'Rome vakantie';
+            $q = 'Barcelona vakantie';
             //$ids = '1430,8293,4855';
            // self::printValue('Performing searchresults request based on q = "'.$q.'", ids = "Nederlandse boeken (1430)", "Nederlandse boeken (8293)" and "Tot &euro; 30 (4855)", 5 items and sort on "sales_ranking"'); 
         } else {

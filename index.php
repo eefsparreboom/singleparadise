@@ -214,6 +214,7 @@
                     <h4 class="modal-title">Download Tag</h4>
                 </div>
                 <div class="modal-body">
+                    <img src="/img/boardingpass.jpg" class="img-responsive" /><br />
                     <button type="button" class="btn btn-primary btn-lg">Download Tag</button>
                 </div>
             

@@ -44,16 +44,19 @@ $oProducts = Example::run();
       <!-- Three columns of text below the carousel -->
       <div class="row">
           <?php
+          $i=0;
           foreach($oProducts AS $oProduct){
+              $i++;
               ?>
-          <div class="col-lg-4">
+          <div class="col-lg-6">
               <img class="img-circle" id="delay-parties" src="<?php echo $oProduct->getThumbnailurl(); ?>" alt="<?php echo $oProduct->getTitle(); ?>" style="width: 140px; height: 140px;">
-            <h2><?php echo $oProduct->getTitle(); ?></h2>
+            <h2 style="height:66px;"><?php echo $oProduct->getTitle(); ?></h2>
             <p><?php echo substr(strip_tags($oProduct->getDescription()),0,200); ?>...</p>
             <strong>&euro;<?php echo $oProduct->getFirstAvailablePrice(); ?></strong><br />
             <a target="_blank" href="<?php echo $oProduct->getExternalurl(); ?>" class="btn btn-primary">buy</a>
           </div><!-- /.col-lg-4 -->
           <?php
+          if($i==2)break;
           }
           ?>
        
@@ -64,7 +67,7 @@ $oProducts = Example::run();
       <hr class="featurette-divider">
       <div class="row">
           <div class="col-xs-12">
-              <img src="/img/"
+              <img src="/img/boardingpass.jpg" class="img-responsive" />
           </div>  
       </div>
     </div>
