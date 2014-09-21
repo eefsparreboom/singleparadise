@@ -111,12 +111,13 @@
     <div class="container cDivMapContainer">
         <div class="row">
             <div class="col-md-8">
-            <div class="embed-responsive embed-responsive-16by9">
+            <div class="embed-responsive embed-responsive-4by3">
             <div id="map-canvas"></div>
             </div>
             </div>
             
             <div class="cDivFilter col-md-4">
+                <label>Pick a departure date</label><br />
                 <div class="cDivCalendar"></div><br />
                 <label>Price: &euro;<span class="cSpanPriceFrom">100</span> - &euro;<span class="cSpanPriceTo">800</span></label><br />
                 <input class="cInputPrice" type="text" value="" data-slider-min="40" data-slider-max="1500" data-slider-step="10">
