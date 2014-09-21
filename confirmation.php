@@ -1,7 +1,14 @@
 <?php
-$oProducts = file_get_contents('http://'.$_SERVER['HTTP_HOST'].'/bol/examples/index.php?action=search&q=barcelona vakantie');
-var_dump($oProducts);
-var_dump(json_decode($oProducts));
+session_start();
+error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+function __autoload($name) {
+	require('bol/src/bolcom/' . $name . '.php');
+}
+require_once 'bol/examples/Example.php';
+$oProducts = Example::run();
+
+//$oProducts = file_get_contents('http://'.$_SERVER['HTTP_HOST'].'/bol/examples/index.php?action=search&q=barcelona vakantie');
+//var_dump(json_decode($oProducts));
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +39,35 @@ var_dump(json_decode($oProducts));
               <center><img src="img/logo.png" class="img-responsive" /></center>
           </div>
       </div>
-    
+    <div class="container marketing">
+ <hr class="featurette-divider">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+          <?php
+          foreach($oProducts AS $oProduct){
+              ?>
+          <div class="col-lg-4">
+              <img class="img-circle" id="delay-parties" src="<?php echo $oProduct->getThumbnailurl(); ?>" alt="<?php echo $oProduct->getTitle(); ?>" style="width: 140px; height: 140px;">
+            <h2><?php echo $oProduct->getTitle(); ?></h2>
+            <p><?php echo substr(strip_tags($oProduct->getDescription()),0,200); ?>...</p>
+            <strong>&euro;<?php echo $oProduct->getFirstAvailablePrice(); ?></strong><br />
+            <a target="_blank" href="<?php echo $oProduct->getExternalurl(); ?>" class="btn btn-primary">buy</a>
+          </div><!-- /.col-lg-4 -->
+          <?php
+          }
+          ?>
+       
+      </div><!-- /.row -->
+
+    </div>
+    <div class="container">
+      <hr class="featurette-divider">
+      <div class="row">
+          <div class="col-xs-12">
+              <img src="/img/"
+          </div>  
+      </div>
+    </div>
     <div class="container">
       <hr class="featurette-divider">
 

@@ -21,7 +21,7 @@ class Example {
 		}
         
         // get action param for which data to get or post
-	    $action = isset($params['action']) ? $params['action'] : "default";
+	    $action = isset($params['action']) ? $params['action'] : "search";
 	    switch($action) {
 	        case 'default':
                 self::ping();
@@ -57,7 +57,7 @@ class Example {
                 self::getLists(true,$params);
                 break;
             case 'search':
-                self::search(false,$params);
+                return self::search(false,$params);
                 break;
             case 'searchraw':
                 self::search(true,$params);
@@ -282,8 +282,8 @@ class Example {
     private static function search($bRaw=0,$params='') {
         // search products /catalog/v4/search/ + queryParams
         if(!isset($params['q'])) {
-            $q = 'Harry Potter';
-            $ids = '1430,8293,4855';
+            $q = 'Rome vakantie';
+            //$ids = '1430,8293,4855';
            // self::printValue('Performing searchresults request based on q = "'.$q.'", ids = "Nederlandse boeken (1430)", "Nederlandse boeken (8293)" and "Tot &euro; 30 (4855)", 5 items and sort on "sales_ranking"'); 
         } else {
             $q = urldecode($params['q']);
@@ -302,10 +302,9 @@ class Example {
             $list = array();
             foreach($response->products as $child) {
                 $item = new Product($child);
-                $list[] = (array)$item;
+                $list[] = $item;
             }
-            var_dump($list);
-            echo json_encode($list);
+            return $list;
         }
 //        self::printValue(" ");
     }
