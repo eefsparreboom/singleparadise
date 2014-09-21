@@ -139,20 +139,60 @@
     </div><!-- /.container -->
     <div class="modal fade" id="iModalInfo">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table table-striped table-responsive">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-responsive">
                   
-</table>
-            </div>
+                    </table>
+                </div>
             
-          </div><!-- /.modal-content -->
+            </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+    </div><!-- /.modal -->
+    
+    <div class="modal fade" id="iModalDelay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Delay Parties</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-responsive">
+                        <tr>
+                            <td>Flight</td>
+                            <td>Destination</td>
+                            <td>Original Departure</td>
+                            <td>Estimated Departure</td>
+                            <td>Flirty Birds</td>
+                            <td>Location</td>
+                        </tr>
+                        <tr>
+                            <td>HV6787</td>
+                            <td>Barcelona</td>
+                            <td>13:45</td>
+                            <td>16:00</td>
+                            <td>5</td>
+                            <td>Meeting Point</td>
+                        </tr>
+                        <tr>
+                            <td>HV6583</td>
+                            <td>Istanbul</td>
+                            <td>20:20</td>
+                            <td>21:20</td>
+                            <td>4</td>
+                            <td>Meeting Point</td>
+                        </tr>
+                    </table>
+                </div>
+            
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
