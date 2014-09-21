@@ -55,7 +55,7 @@
 	<div class="row">
 		<div class="col-md-6 centered col-md-offset-3">
 			<h2>Personal information</h2>
-			<form role="form">
+			<form role="form" action="/confirmation.php">
   				<div class="form-group">
     					<label for="firstname">First name</label>
     					<input type="text" class="form-control" id="firstname" placeholder="please provide first name">
@@ -70,7 +70,7 @@
                                 </div>				
 				<div class="radio">
   					<label>
-    						<input type="radio" name="gender" id="optionsRadios1" value="option1" checked>
+    						<input type="radio" name="gender" id="optionsRadios1" value="option1">
     						male
   					</label>
 				</div>
@@ -81,7 +81,8 @@
   					</label>
 				</div>
 				<div class="form-group">
-					<input data-provide="datepicker">
+					<label for="birth">Date of birth</label><br/>
+					<input type="text" style="width:100%" id="birth" data-provide="datepicker" placeholder="please provide date of birth">
 				</div>
 				<div class="radio">
                                         <label>
@@ -91,7 +92,7 @@
                                 </div>
                                 <div class="radio">
                                         <label>
-                                                <input type="radio" name="vegetarion" id="non-veg" value="option2" checked>
+                                                <input type="radio" name="vegetarion" id="non-veg" value="option2">
                                                 non-vegetarian
                                         </label>
                                 </div>
