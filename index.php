@@ -40,7 +40,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-            <img src="img/carousel3.jpg" alt="First slide">
+            <img src="img/carousel4.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Find a Flirty Birdy Flight.</h1>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="item">
-            <img src="img/carousel2.jpg" alt="Second slide">
+            <img src="img/carousel3.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Get your Flirty Bird on.</h1>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="item">
-            <img src="img/carousel3.jpg" alt="Second slide">
+            <img src="img/carousel2.jpg" alt="Second slide">
             <div class="container">
             <div class="carousel-caption">
             <h1>Happy Flirty Flight!</h1>
