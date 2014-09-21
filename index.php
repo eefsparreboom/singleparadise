@@ -86,13 +86,13 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="img/testimonial_1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <img class="img-circle" id="delay-parties" src="img/testimonial_1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Delay-Party Barcelona</h2>
           <p>The 3 hour delay at Barcelona Airport turned into a great get together. I met really nice people and it was a great start of my holiday.Anne and I still keep in touch.</p>
           <em>-Ross-</em>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="img/testimonial_2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <img class="img-circle" id="download-tag" src="img/testimonial_2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
            <h2>Flirting below the belt</h2>
           <p>When I picked up my luggage Matt spotted my Flirty Bird tag. We shared a cab into town and went for a coffee. It was a great start of my holiday.</p>
           <em>-Lorena-</em>
@@ -188,6 +188,21 @@
                             <td>Meeting Point</td>
                         </tr>
                     </table>
+                </div>
+            
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <div class="modal fade" id="iModalDownload">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Download Tag</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary btn-lg">Download Tag</button>
                 </div>
             
             </div><!-- /.modal-content -->
