@@ -118,7 +118,7 @@ function initialize() {
       google.maps.event.addDomListener(window, 'load', initialize);
       
 $(document).ready(function(){
-   $('.cDivCalendar').datepicker().on('changeDate',function(){
+    $('.cDivCalendar').datepicker().on('changeDate',function(){
            updateBirds();
        }
     ); 
@@ -129,6 +129,13 @@ $(document).ready(function(){
     $('.cInputPrice').slider({
         value:[100,800]
     });
+    $('#delay-parties').on('click',function(){
+       $('#iModalDelay').modal(); 
+    });
+    $('#download-tag').on('click',function(){
+       $('#iModalDownload').modal();
+    });
+    
     
     function updateBirds(){
         var vars = {};
