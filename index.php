@@ -36,14 +36,15 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
             <img src="img/carousel3.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <h1>Find a Flirty Birdy Flight.</h1>
+              <p>Find flights full of other single travellers. <br />Search by Destination, Price and Number of Singles Travellers.</p>
               <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
             </div>
           </div>
@@ -52,21 +53,30 @@
             <img src="img/carousel2.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>Get your Flirty Bird on.</h1>
+              <p>After you have booked your flight you will receive your Flirty Bird Luggage Tag. <br />Tag it on your luggage and let the flirting begin at the Airport.</p>
                <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="img/carousel1.jpg" alt="Second slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <img src="img/carousel3.jpg" alt="Second slide">
+            <div class="container">
+            <div class="carousel-caption">
+            <h1>Happy Flirty Flight!</h1>
+            <p>Travelling will be exciting again. <br />Spot other Flirty Bird Luggage Tags and start flirting.</p>
               <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
-
           </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/carousel2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+            <h1>Delays where never this much Fun!</h1>
+            <p>Having a Delay? Let the party begin! Flirty Bird will initialize a Flirty Bird Party for all Flirty Birds at the Airport.</p>
+            <p><a class="btn btn-lg btn-primary" href="#find" role="button">Find your Flirty Bird</a></p>
+            </div>
         </div>
       </div>
         
