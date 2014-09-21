@@ -107,7 +107,7 @@
 
     </div>
     <a name="find"></a>
-    <h1 style="text-align: center;">Find a <img src="img/logo.png" width="200px" /> flight</h1>
+    <h1 style="text-align: center;"><img src="img/logo_map.png" height="100px" /> </h1>
     <div class="container cDivMapContainer">
         <div class="row">
             <div class="col-md-8">
